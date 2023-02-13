@@ -1,0 +1,76 @@
+body{
+    background-image: url("./images/background.jpg");
+    margin: 0%;
+    background-size: cover;
+}
+
+#BigBox{
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    height: 90vh;
+    background-color: #cceeff;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* justify-self: center;
+    align-self: center; */
+    margin: 5vh 2.5vw;
+    box-shadow: 0 3px 5px #00000039;
+}
+
+#QR_container {
+    display: grid;
+    grid-template-columns: 250px;
+    grid-template-rows: 250px 150px;
+    grid-template-areas: 
+    "img"
+    "text";
+    border: none;
+    background-color: white;
+    width: 250px;
+    height: 400px;
+    border-radius: 15px;
+    box-shadow: 0 3px 15px #0000007d;
+}
+
+#QR_IMG{
+    grid-area: img;
+    display: flex;
+    margin: 10px;
+    border-radius: 15px;
+    padding: 0px;
+    background-image: url(./images/image-qr-code.png);
+    background-size: cover;
+    height: auto;
+    width: auto;
+}
+
+#textbox{
+    grid-area: text;
+    display: flex;
+    padding: 0px 10px;
+    max-width: 230px;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#title{
+    font-size: 1em;
+    opacity: 100%;
+    color:black;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Poppins', Helvetica, Arial, sans-serif;
+    margin: 10px;
+}
+
+#text{
+    font-size: 0.75em;
+    opacity: 60%;
+    color: black;
+    text-align: center;
+    font-weight: normal;
+    font-family: 'Poppins', Helvetica, Arial, sans-serif;
+    margin: 0px 10px;
+}
