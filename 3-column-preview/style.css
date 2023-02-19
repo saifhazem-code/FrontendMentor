@@ -39,7 +39,7 @@ p{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    height: 100vh;
+    height: 97vh;
     background-color: transparent;
     flex-direction: row;
     align-items: center;
@@ -48,17 +48,22 @@ p{
 
 .container{
     display: flex;
-    flex-wrap: wrap;
     float: left;
-    width: fit-content;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: max-content;
+    min-width: 300px;
     height: fit-content;
-    border-radius: 15px;
+    border-radius: 25px;
+    overflow: hidden;
+    margin: 0px 100px;
 }
 
 .Sedan{
     height: 500px;
     width: 300px;
-    border-radius: 15px 0px 0px 15px;
+    background-clip: border-box;
+    /* border-radius: 15px 0px 0px 15px; */
     background-color: hsl(31, 77%, 52%);
     display: grid;
     grid-template-rows: 100px 100px 200px 100px;
@@ -147,7 +152,6 @@ p{
 }
 
 .Luxury{
-    border-radius: 0px 15px 15px 0px;
     background-color: hsl(179, 100%, 13%);
     height: 500px;
     width: 300px;
