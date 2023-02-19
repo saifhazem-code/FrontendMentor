@@ -39,15 +39,27 @@ body{
 
 #QR_IMG{
     grid-area: img;
+    grid-column: 1;
     display: flex;
     margin: 10px;
     border-radius: 15px;
     padding: 0px;
-    background-image: url(./images/image-qr-code.png);
-    background-size: cover;
+    /*background-image: url(./images/image-qr-code.png);*/
+    /*background-size: cover;*/
     height: auto;
     width: auto;
 }
+
+.QR{
+    border-radius: 15px;
+    grid-area: img;
+    display: flex;
+    margin: 10px;
+    border-radius: 15px;
+    height: 230px;
+    width: auto;
+}
+
 
 #textbox{
     grid-area: text;
@@ -59,7 +71,7 @@ body{
 }
 
 #title{
-    font-size: 1em;
+    font-size: 20px;
     opacity: 100%;
     color:black;
     text-align: center;
@@ -69,7 +81,7 @@ body{
 }
 
 #text{
-    font-size: 0.75em;
+    font-size: 15px;
     opacity: 60%;
     color: black;
     text-align: center;
