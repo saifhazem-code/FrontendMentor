@@ -1,0 +1,193 @@
+body{
+    background-color: hsl(0, 0%, 95%);
+}
+
+h1{
+    color: hsl(0, 0%, 95%);
+    font-size: 40px;
+    font-family: 'Big Shoulders Display', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+p{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    font-family: 'Lexend Deca', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    line-height: 1.6em;
+}
+
+.button {
+    background-color: hsl(0, 0%, 95%);
+    border: none;
+    height: 54px;
+    width: 150px;
+    padding: 0px 0px;
+    text-align: center;
+    line-height: 54px;
+    vertical-align: middle;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 30px;
+    border: 3px solid hsl(0, 0%, 95%);
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+#BigBox{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100vh;
+    background-color: transparent;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    float: left;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 15px;
+}
+
+.Sedan{
+    height: 500px;
+    width: 300px;
+    border-radius: 15px 0px 0px 15px;
+    background-color: hsl(31, 77%, 52%);
+    display: grid;
+    grid-template-rows: 100px 100px 200px 100px;
+    grid-template-areas: 
+    "sedanimg"
+    "sedantitle"
+    "sedantext"
+    "sedanbutton"
+}
+
+.Sedanimg{
+    grid-area: sedanimg;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.Sedantitle{
+    grid-area: sedantitle;
+    margin: 20px 50px;
+}
+
+.Sedantext{
+    grid-area: sedantext;
+    margin: 0 50px;
+}
+
+.Sedanbutton{
+    grid-area: sedanbutton;
+    margin: 0 50px;
+    color: hsl(31, 77%, 52%);
+    font-size: 15px;
+    font-family: 'Lexend Deca', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    line-height: 1.6em;
+}
+
+
+.Sedanbutton .button:hover{
+    background-color: hsl(31, 77%, 52%);
+    color: hsl(0, 0%, 95%);
+}
+
+.Suv{
+    background-color: hsl(184, 100%, 22%);
+    height: 500px;
+    width: 300px;
+    display: grid;
+    grid-template-rows: 100px 100px 200px 100px;
+    grid-template-areas: 
+    "suvimg"
+    "suvtitle"
+    "suvtext"
+    "suvbutton"
+}
+
+.Suvimg{
+    grid-area: suvimg;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.Suvtitle{
+    grid-area: suvtitle;
+    margin: 20px 50px;
+}
+
+.Suvtext{
+    grid-area: suvtext;
+    margin: 0 50px;
+}
+
+.Suvbutton{
+    grid-area: suvbutton;
+    margin: 0 50px;
+    color: hsl(184, 100%, 22%);
+    font-size: 15px;
+    font-family: 'Lexend Deca', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    line-height: 1.6em;
+}
+
+
+.Suvbutton .button:hover{
+    background-color: hsl(184, 100%, 22%);
+    color: hsl(0, 0%, 95%);
+}
+
+.Luxury{
+    border-radius: 0px 15px 15px 0px;
+    background-color: hsl(179, 100%, 13%);
+    height: 500px;
+    width: 300px;
+    display: grid;
+    grid-template-rows: 100px 100px 200px 100px;
+    grid-template-areas: 
+    "luxuryimg"
+    "luxurytitle"
+    "luxurytext"
+    "luxurybutton"
+}
+
+.Luxuryimg{
+    grid-area: luxuryimg;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.Luxurytitle{
+    grid-area: luxurytitle;
+    margin: 20px 50px;
+}
+
+.Luxurytext{
+    grid-area: luxurytext;
+    margin: 0 50px;
+}
+
+.Luxurybutton{
+    grid-area: luxurybutton;
+    margin: 0 50px;
+    color: hsl(184, 100%, 22%);
+    font-size: 15px;
+    font-family: 'Lexend Deca', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    line-height: 1.6em;
+}
+
+
+.Luxurybutton .button:hover{
+    background-color: hsl(184, 100%, 22%);
+    color: hsl(0, 0%, 95%);
+}
